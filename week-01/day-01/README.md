@@ -1,24 +1,24 @@
-# Day 01 — Program Orientation & .NET Development Environment Setup
-**Week 1 | Phase 1: Onboarding & Foundations | July 20, 2026**
+# Day 01 — AI & ML Environment Setup & Jupyter Workflow
+**Week 1 | Phase 1: Python & Data Science Foundations | July 20, 2026**
 
 ## 🛠️ What I Did
-- Walked through the full 400-hour program structure
-- Installed .NET SDK and verified with `dotnet --version`
-- Created and ran my first console app (`HelloBinX`)
-- Modified the program to print my name and today's date
-- Set up GitHub repo for the internship
+- Overviewed Phase 1 program structure and daily expectations for the AI & ML track
+- Created and activated a Python virtual environment (`.venv`) using Git Bash
+- Installed core data science dependencies (`numpy`, `pandas`, `matplotlib`, `jupyter`)
+- Created a Jupyter Notebook (`week1_setup.ipynb`) combining Markdown and executable code cells
+- Executed a setup verification script to confirm installed library versions
+- Generated `requirements.txt` to ensure a reproducible environment[cite: 1]
+- Configured `.gitignore` and committed all Day 1 deliverables to GitHub[cite: 1]
 
 ## 💻 Code / Commands
-\```bash
-dotnet --version
-dotnet new console -o HelloBinX
-dotnet run
-\```
+```bash
+# Environment Creation & Activation (Git Bash)
+python -m venv .venv
+source .venv/Scripts/activate
 
-## ✅ Deliverable Checklist (Day 1)
-- [✅] `dotnet --version` runs cleanly
-- [✅] "Hello World" console app builds and runs
-- [✅] GitHub repo created (`Hussein Khateeb — BinX Backend Internship`)
+# Package Installation & Verification
+pip install numpy pandas matplotlib jupyter
+jupyter notebook
 
-## 🔗 Links
-- Code: [View File](./WebApplication1/Program.cs)
+# Freezing Dependencies
+pip freeze > requirements.txt
